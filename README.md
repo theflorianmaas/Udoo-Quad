@@ -38,6 +38,9 @@ Remember to patch the /etc/fstab inside the SATA disk:
 (/dev/SATA2 is the second partition, available after flashing UDOObuntu;)
 
 Edit /etc/ftab
+    
+    sudo nano /etc/fstab
+    
 Replace the content with these two lines and save:
 
     /dev/sda2  /      ext4  defaults,noatime               0  0
