@@ -47,8 +47,11 @@ Replace the content with these two lines and save:
     /dev/sda1  /boot  vfat  defaults,noatime               0  0
     
 3. Install
+
 Insert the boot SD card
+
 Attach the sata driver
+
 Reboot
 
 
