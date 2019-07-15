@@ -33,12 +33,12 @@ Decompress the image and flash it to the SATA drive:
 
 Remember to patch the /etc/fstab inside the SATA disk:
 
-mount /dev/SATA2 /mnt/sata  (/dev/SATA2 is the second partition, available after flashing UDOObuntu;)
+    mount /dev/SATA2 /mnt/sata 
+
+(/dev/SATA2 is the second partition, available after flashing UDOObuntu;)
 
 Edit /etc/ftab
 Replace the content with these two lines and save:
-
-dd if=udoobuntu-udoo-qdl-desktop_3.0beta1.img of=/dev/SATA bs=1M
 
     /dev/sda2  /      ext4  defaults,noatime               0  0
     /dev/sda1  /boot  vfat  defaults,noatime               0  0
