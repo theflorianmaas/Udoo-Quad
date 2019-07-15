@@ -25,6 +25,7 @@ dd if=udoo_qdl-sata-3.img of=/dev/mmcblk0 bs=1M
 2. Flash the SATA drive
 
 Download the latest UDOObuntu from the official site. https://drive.google.com/file/d/1jmVr4k3DuE1jLi9FneefZ1Y0tJlcYw76/view
+
 Decompress the image and flash it to the SATA drive:
 
 # in this example, the SATA drive device is /dev/SATA
