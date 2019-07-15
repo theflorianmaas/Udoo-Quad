@@ -15,13 +15,14 @@ Prerequisites
 
 UDOObuntu 3.0 (beta)
 
-Flash the boot SD card
+1. Flash the boot SD card
 
-You need an SD card with the bootloader in order to boot from SATA. Download the file Udoo_qdl-sata-3.zip it is the boot image and, after unzipping it, flash it to the SD:
+You need an SD card with the bootloader in order to boot from SATA. 
+Download the file Udoo_qdl-sata-3.zip that contains the boot image and, after unzipping it, flash it to the SD:
 
 dd if=udoo_qdl-sata-3.img of=/dev/mmcblk0 bs=1M
 
-Flash the SATA drive
+2. Flash the SATA drive
 
 Download the latest UDOObuntu from the official site. https://drive.google.com/file/d/1jmVr4k3DuE1jLi9FneefZ1Y0tJlcYw76/view
 Decompress the image and flash it to the SATA drive:
@@ -39,6 +40,7 @@ Replace the content with these two lines and save:
 /dev/sda2  /      ext4  defaults,noatime               0  0
 /dev/sda1  /boot  vfat  defaults,noatime               0  0
 
+3. Install
 Insert the boot SD card
 Attach the sata driver
 Reboot
